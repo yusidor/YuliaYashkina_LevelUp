@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Calculator Other Test Suite">
+
+    <test name="Calculator Other Test">
+        <classes>
+            <class name="homework.functional.CalculatorPowerTest">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
