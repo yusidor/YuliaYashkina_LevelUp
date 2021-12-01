@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Calculator All Tests Suite">
+
+    <test name="Calculator All Tests">
+        <packages>
+            <package name="homework.functional"/>
+        </packages>
+    </test>
+
+</suite>

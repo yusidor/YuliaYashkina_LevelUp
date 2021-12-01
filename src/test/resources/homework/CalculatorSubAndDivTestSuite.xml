@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Calculator Sub and Div Splitted Suite">
+
+    <test name="Calculator Sub Test">
+        <classes>
+            <class name="homework.functional.CalcultorSubtractTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Calculator Div Test">
+        <classes>
+            <class name="homework.functional.CalculatorDivideTest">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
