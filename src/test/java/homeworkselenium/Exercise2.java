@@ -13,7 +13,6 @@ public class Exercise2 extends SeleniumBaseTest {
         MailPage mpage = new MailPage(driver);
 
         mpage.loginPage();
-
         mpage.checkLoginStatus();
         mpage.createEmail("Тест");
         mpage.sendEmail("Тест");

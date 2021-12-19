@@ -11,18 +11,13 @@ public class Exercise1 extends SeleniumBaseTest {
         MailPage mpage = new MailPage(driver);
 
         mpage.loginPage();
-
         mpage.checkLoginStatus();
-
         mpage.createEmail("Exercise1");
         mpage.saveEmailToDraft();
-
         mpage.checkEmailContent("Exercise1");
         mpage.sendEmail("draft");
-
         mpage.checkDraftIsEmpty();
         mpage.checkOutboxNotEmpty();
-
         mpage.logoutPage();
 
         driver.quit();
