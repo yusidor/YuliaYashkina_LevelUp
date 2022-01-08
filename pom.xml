@@ -31,6 +31,10 @@
         <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <suite.root.directory>${project.basedir}/src/test/resources/homework</suite.root.directory>
+
+        <selenium-java.version>4.0.0</selenium-java.version>
+        <assertj-core.version>3.21.0</assertj-core.version>
+        <webdrivermanager.version>5.0.3</webdrivermanager.version>
     </properties>
 
     <profiles>
@@ -89,6 +93,28 @@
             </properties>
         </profile>
 
+        <profile>
+            <id>selenium-all-tests</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <suite.xml.name>SeleniumAllTestSuite.xml</suite.xml.name>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>selenium-all-tests-new</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <suite.xml.name>SeleniumAllTestSuiteNew.xml</suite.xml.name>
+            </properties>
+        </profile>
+
 
     </profiles>
 
@@ -113,6 +139,26 @@
             <version>1.0</version>
         </dependency>
 
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- AssertJ -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -123,6 +169,8 @@
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
 
