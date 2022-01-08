@@ -9,7 +9,8 @@ public final class UserProperties {
     public static final String SUBJECT3 = "Exercise3";
     public static final String TEXT = "Text1";
     public static final String DRAFT_FOLDER = "Черновики";
-    //public static final String OUTBOX_FOLDER = "Отправленные";
     public static final String NAME = "Yulia Testtt";
+    public static final String MESSAGE_NO_EMAILS_IN_DRAFT = "нет незаконченных";
+
 
 }

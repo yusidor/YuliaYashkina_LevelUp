@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="All Selenium Test Suite New">
+
+    <test name="Exercise1New Test">
+        <classes>
+            <class name="homeworkseleniumtwo.Exercise1New">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Exercise2New Test">
+        <classes>
+            <class name="homeworkseleniumtwo.Exercise2New">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Exercise3New Test">
+        <classes>
+            <class name="homeworkseleniumtwo.Exercise3New">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

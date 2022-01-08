@@ -104,6 +104,17 @@
             </properties>
         </profile>
 
+        <profile>
+            <id>selenium-all-tests-new</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <suite.xml.name>SeleniumAllTestSuiteNew.xml</suite.xml.name>
+            </properties>
+        </profile>
+
 
     </profiles>
 
